@@ -1,0 +1,15 @@
+{
+  "LOGIN_PAGE": {
+    "path": "auth/login",
+    "credentials": {
+      "VALID_USERNAME": "employee1",
+      "VALID_PASSWORD": "E!2345678e",
+      "INVALID_USERNAME": "invalid",
+      "INVALID_PASSWORD": "invalid",
+      "EMPTY_USERNAME": "",
+      "EMPTY_PASSWORD": "",
+      "ESS_USERNAME": "employee1",
+      "ESS_PASSWORD": "E!2345678e"
+    }
+  }
+}
