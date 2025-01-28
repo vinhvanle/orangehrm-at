@@ -21,20 +21,14 @@ class Navigation extends Page {
   get leaveModuleButton() {
     return $(`a[href='/orangehrm/web/index.php/leave/viewLeaveModule']`);
   }
-  get timeModuleButton() {
-    return $(`a[href='/orangehrm/web/index.php/time/viewTimeModule']`);
-  }
 
   async navigateToModule(module) {
-    module = module.toUpperCase();
-    switch (module) {
-      case 'LEAVE':
-        await this.click(this.leaveModuleButton);
-        break;
-      case 'TIME':
-        await this.click(this.timeModuleButton);
-        break;
-    }
+    module = stringManipulation.capitalizeFirstLetter(module);
+    const target = await $(
+      `//a[@href='/orangehrm/web/index.php/${module.toLowerCase()}/view${module}Module']`
+    );
+
+    await this.click(target);
   }
 }
 

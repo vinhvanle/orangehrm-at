@@ -64,9 +64,16 @@ class LoginPage extends Page {
     await this.click(this.loginButton);
   }
 
-  /**
-   * Declare all ele
-   */
+  async login(username, password) {
+    try {
+      await this.fillUsername(username);
+      await this.fillPassword(password);
+      await this.clickLoginButton();
+    } catch (err) {
+      err.message = `Error while trying to login: ${err.message}`;
+      throw err;
+    }
+  }
 }
 
 export default new LoginPage();

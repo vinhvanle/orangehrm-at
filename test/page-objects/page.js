@@ -34,6 +34,8 @@ class Page {
     }
     await ele.setValue(text);
   }
+
+  async;
 }
 
 export default Page;
