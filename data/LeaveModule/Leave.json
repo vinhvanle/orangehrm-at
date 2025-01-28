@@ -1,0 +1,32 @@
+[
+ {
+  "testID": "LEAVE-001",
+  "validFromDate": "2024-10-16",
+  "validToDate": "2024-10-16",
+  "invalidDate": "15-10-20022",
+  "comment": "Annual Leave automation",
+  "AnnualLeave": 25,
+  "SickLeave": 7,
+  "UnpaidLeave": 100
+ },
+ {
+  "testID": "LEAVE-002",
+  "validFromDate": "2024-10-17",
+  "validToDate": "2024-10-17",
+  "invalidDate": "15-10-20022",
+  "comment": "Sick Leave automation",
+  "AnnualLeave": 25,
+  "SickLeave": 7,
+  "UnpaidLeave": 100
+ },
+ {
+  "testID": "LEAVE-003",
+  "validFromDate": "2024-10-18",
+  "validToDate": "2024-10-18",
+  "invalidDate": "15-10-20022",
+  "comment": "Unpaid Leave automation",
+  "AnnualLeave": 25,
+  "SickLeave": 7,
+  "UnpaidLeave": 100
+ }
+]
